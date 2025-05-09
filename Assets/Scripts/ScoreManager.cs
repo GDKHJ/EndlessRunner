@@ -50,6 +50,10 @@ public class ScoreManager : MonoBehaviour
     //죽음 상태 체크
     [SerializeField] private bool DeadCheck = false;
 
+    [Header("레벨업 텍스트")]
+    public GameObject levelUpText;
+    public float levelUpTextDuration = 1f;
+
 
     private void Start()
     {
@@ -109,11 +113,14 @@ public class ScoreManager : MonoBehaviour
         if (level == max_level)
             return;
 
-        levelperscore *= 3;
+        levelperscore += 10;
         level++;
         playerController.SetSpeed(level);
         SetTMP_Text();
+
+        ShowLevelUpText();
     }
+        
     public void SetTMP_Text()
     {
         levelText.text = $"level :  {level}";
@@ -126,5 +133,20 @@ public class ScoreManager : MonoBehaviour
         DeadCheck = true;
         //매니저에 점수 전달
         deadManager.SetScoreText(score);
+    }
+
+    private void ShowLevelUpText()
+    {
+        if (levelUpText != null)
+        {
+            levelUpText.SetActive(true);
+            CancelInvoke(nameof(HideLevelUpText));
+            Invoke(nameof(HideLevelUpText), levelUpTextDuration);
+        }
+    }
+
+    private void HideLevelUpText()
+    {
+        levelUpText.SetActive(false);
     }
 }
