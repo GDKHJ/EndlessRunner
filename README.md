@@ -1,6 +1,6 @@
 # EndlessRunner
 
-##주요 변경점
+## 주요 변경점
 1. Start Coundown
 2. 3-Rail-System : 3방향으로 회피가능
 3. Jump 기능 구현, Animator 변경
