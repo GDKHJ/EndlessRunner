@@ -12,5 +12,6 @@
    - 7-1. Obstacle 생성시, 돌파가 불가능하게 나오는 패턴을 제거
    - 7-2. 시작시 일정 시간 동안 Obstacle이 나오지 않도록 설계.
 
-Link: [Build File][https://drive.google.com/file/d/1gPLbtHtqqIdtEED-LoLE2IcKkuf_AnA4/view?usp=sharing]
-   - [Video][https://drive.google.com/file/d/1N9uvEIZYK-Ecpx30kjfYbriFTh6jMN4M/view?usp=sharing]
+Link
+   - [Build File](https://drive.google.com/file/d/1gPLbtHtqqIdtEED-LoLE2IcKkuf_AnA4/view?usp=sharing)
+   - [Video](https://drive.google.com/file/d/1N9uvEIZYK-Ecpx30kjfYbriFTh6jMN4M/view?usp=sharing)
